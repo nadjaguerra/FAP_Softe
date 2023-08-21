@@ -1,3 +1,5 @@
+
+
 var capac, pedal, terr, quant, trat;
 
 alert ('RESPONDA 1 PARA SIM E 0 PARA NÃO'+ "\n");
