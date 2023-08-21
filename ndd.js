@@ -1,19 +1,16 @@
 function area() {
-    
-    a = 4*PI*raio**2
 
-    return a
+    return 4*PI*raio**2
 }
 
 function volume() {
-    v = (4/3)*PI*raio**3
-
-    return v
+    
+    return (4/3)*PI*raio**3
 }
 
 
 const PI = 3.14;
 raio = parseFloat(prompt("Qual o valor do raio?\n"))
 
-console.log(area(raio))
-console.log(volume(raio))
+console.log(area())
+console.log(volume())
