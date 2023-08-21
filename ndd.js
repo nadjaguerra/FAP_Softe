@@ -11,11 +11,9 @@ function volume() {
     return v
 }
 
-let a, exi_a, exi_v;
+
 const PI = 3.14;
 raio = parseFloat(prompt("Qual o valor do raio?\n"))
-exi_a = area(raio)
-exi_v=volume(raio)
 
-console.log(exi_a)
-console.log(exi_v)
+console.log(area(raio))
+console.log(volume(raio))
