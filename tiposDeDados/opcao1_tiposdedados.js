@@ -10,14 +10,41 @@ Certifiquem-se de que os valores correspondam aos tipos de dados corretos*/
 */
 
 
-function cadastro(){
-    nome = prompt("Digite o Nome: ")
-    salario = parseFloat(prompt("Digite o salário: "))
-    idade = parseInt(prompt("Digite a idade: "))
-    diploma = prompt("Informe se tem diploma: (sim ou nao) ").toLowerCase() === "sim"
-    
-    return ("Nome: " + typeof(nome)+'\nSalario: '+ typeof(salario) +
-         '\nIdade: ' + typeof(idade) + '\nDiploma: ' + typeof(diploma))
+function cadastro() {
+    try {
+        var nome = prompt("Digite o Nome: ")
+        var salario = parseFloat(prompt("Digite o salário: "))
+        var idade = parseInt(prompt("Digite a idade: "))
+        var diploma = prompt("Informe se tem diploma (sim ou nao): ").toLowerCase()
+
+        if (!isNaN(nome)||isNaN(salario) || isNaN(idade)) {
+            throw new Error('Insira um valor válido.')
+        }
+
+        var pessoa = {
+            nome: nome,
+            salario: salario,
+            idade: idade,
+            diploma: diploma
+        }
+
+        var tipos = {
+            nome: typeof nome,
+            salario: typeof salario,
+            idade: typeof idade,
+            diploma: typeof diploma
+        }
+
+        console.log('__________________________________\n\n')
+        console.log("Tipos das Variáveis:\n", tipos)
+
+        return pessoa
+    } catch (error) {
+        console.error(error.message)
+       
+    }
 }
 
-console.log(cadastro())
+var cadastroPessoa = cadastro()
+console.log("Cadastro Final:", cadastroPessoa)
+
