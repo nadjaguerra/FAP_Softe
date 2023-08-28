@@ -1,10 +1,20 @@
+//Nota mínima para ser aprovado na terceira prova
+
 function calcMedia() {
     let soma = 0;
-    for (i = 0; i <= 1; i++) {
-        nota = parseFloat(prompt(`Informe a ${i + 1}ª nota: `))
-        soma += nota
+    for (let i = 0; i <= 1; i++) {
+        try {
+            let nota = parseFloat(prompt(`Informe a ${i + 1}ª nota: `));
+            if (isNaN(nota)) {
+                throw new Error('Valor inserido não é um número válido.');
+            }
+            soma += nota;
+        } catch (error) {
+            console.error(error.message);
+            i--;
+        }
     }
-    return 21 - soma               //Considerando que a média para ser aprovado é 7
+    return 21 - soma; // Considerando que a média para ser aprovado é 7
 }
 
 //Sendo 10 a nota máxima de uma prova
