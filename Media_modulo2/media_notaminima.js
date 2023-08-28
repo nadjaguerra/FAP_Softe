@@ -6,7 +6,7 @@ function calcMedia() {
         try {
             let nota = parseFloat(prompt(`Informe a ${i + 1}ª nota: `));
             if (isNaN(nota)) {
-                throw new Error('Valor inserido não é um número válido.');
+                throw new Error('Insira apenas números.');
             }
             soma += nota;
         } catch (error) {
