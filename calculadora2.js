@@ -4,14 +4,14 @@ console.log('CALCULADORA')
 while (true) {
     try {
         opc = prompt(`
-______________________________
+_______________________________
 Selecione a operação desejada:
 + : Soma
 - : Subtração
 * : Multiplicação
 / : Divisão
 0 : Sair
-______________________________
+_______________________________
 `)
 
         if (opc === '0') {
