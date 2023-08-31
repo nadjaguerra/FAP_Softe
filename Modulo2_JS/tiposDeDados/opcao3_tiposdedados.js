@@ -26,8 +26,8 @@ function verificaNome(nome) {
 }
 //verifica se possui apenas numeros
 function verificaNum(num) {
-    const regex = /^[0-9]+$/;
-    return regex.test(num);                  //vai verificar se corresponde ao que foi pedido e retorna true
+    const numValido = /^[0-9]+$/;
+    return numValido.test(num);                  //vai verificar se corresponde ao que foi pedido e retorna true
 }
 
 let dados = false;
