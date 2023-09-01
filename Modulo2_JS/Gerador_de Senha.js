@@ -32,4 +32,4 @@ const exibeSenha = (senha) => {
 }
 
 //chamando a função para exibir a senha criada
-exibeSenha(gerarStringAleatoria());
+exibeSenha(gerarStringAleatoria()); 
