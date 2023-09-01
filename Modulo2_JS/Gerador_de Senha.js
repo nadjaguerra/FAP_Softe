@@ -1,3 +1,5 @@
+//O código abaixo é um GERADOR DE SENHA
+
 // 1ª - Função para gerar uma string aleatória
 function gerarStringAleatoria() {
   const opCaracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_=+{}\[\]|:;'<>,.?/"
