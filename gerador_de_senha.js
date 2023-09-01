@@ -25,6 +25,7 @@ function gerarStringAleatoria() {
   
     const senhaValida = letraMaiusc && letraMinus && num && caracEspecial
     return senhaValida
+    
   }
   
   //3ª Função (tipo arrow) para exibir a senha
