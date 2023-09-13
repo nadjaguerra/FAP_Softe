@@ -7,4 +7,4 @@ for (let i = 0; i < array.length; i++) {
         return 
     }
 }
-console.log(`Não há um número ${num} array.`)
+console.log(`Não há um número ${num} no array.`)
