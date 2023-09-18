@@ -34,6 +34,8 @@ function gerarStringAleatoria() {
     console.log(`A senha é ${senha}`);
   }
   
-  //chamando a função para exibir a senha criada
-  exibeSenha(gerarStringAleatoria()); 
+ //chamando a função para exibir a senha criada
+  if (validaString(gerarStringAleatoria())) {
+      exibeSenha(gerarStringAleatoria()); 
+  }
   
