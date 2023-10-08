@@ -23,7 +23,6 @@ const calculadoraMedia = {
         }
       }
     }
-
     return soma / 3;
   }
 };
