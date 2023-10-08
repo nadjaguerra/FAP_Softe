@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 const calculadoraMedia = {
   notas: [],
   excecaoOcorreu: false,
